@@ -68,14 +68,10 @@ void	execute_push_two(t_node **a, t_node **b, int stacksize)
 {
 	int	count;
 	int	pushed;
-	int	pone;
-	int	ptwo;
 	int	pthree;
 
 	pushed = 0;
 	count = stacksize - 1;
-	pone = stacksize / 4;
-	ptwo = (stacksize * 2) / 4;
 	pthree = (stacksize * 3) / 4;
 	while (pushed < stacksize)
 	{

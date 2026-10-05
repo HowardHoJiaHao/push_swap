@@ -46,7 +46,7 @@ int	main(int argc, char **argv)
 
 	stacka = NULL;
 	if (argc == 1)
-		return (write(2, "Error\n", 6), 1);
+		return (0);
 	if (argc == 2 && (argv[1][0] == '\0' || is_space_only(argv[1])))
 		return (write(2, "Error\n", 6), 1);
 	if (data_init(argc, argv, &track_arr, &track_arr_size))
